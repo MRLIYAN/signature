@@ -44,8 +44,8 @@ function removeImgBg(img) {
     
     //背景颜色  白色
     var rgba = [255, 255, 255, 255];
-    // 容差大小
-    var tolerance = 60;
+    // 容差大小，值越大，锯齿感越小，但是过大也会导致截图过于细致导致丢失，自己看效果调整
+    var tolerance = 120;
 
     var imgData = null;
     var [r0, g0, b0, a0] = rgba;
