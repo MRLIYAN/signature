@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no, minimal-ui">
+    <title></title>
+    <link rel="stylesheet" href="./css/common.css">
+    <link rel="stylesheet" href="./css/infoCheck.css">
+
+    <style type="text/css">
+    .img-ce{
+        position: relative;
+        width: 300px; min-height: 100px;
+        background:green;
+    }
+    .img-ce .img{
+        display: inline-block; width: 300px !important;
+        position: absolute; background: transparent;
+        top:0; left: 0; z-index: 1;
+    }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <span class="name-ctain" id="name"></span>
+
+        <div class="btn-ctain">
+            <div class="btn btn-submit" onclick="goSubmit()">提交</div>
+        </div>
+
+        <div class="img-ce">
+            <img class="img" id="imgres" src="" alt="">
+        </div>
+    </div>
+
+
+    <script type="text/javascript" src="./js/jquery-3.6.0.min.js"></script>
+    <script type="text/javascript" src="./js/html2canvas.min.js"></script>
+    <script src="./js/infoCheck.js"></script>
+</body>
+</html>
