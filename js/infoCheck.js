@@ -23,6 +23,7 @@ function goSubmit(){
         $("#imgres").attr("src",imgUrl);
         setTimeout(() => {
             var url = removeImgBg(document.getElementById('imgres'));
+            $("#imgres").hide();
             $("#imgres").show();
             console.log(url);
         }, 200);
