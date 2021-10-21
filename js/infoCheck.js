@@ -20,12 +20,14 @@ function goSubmit(){
     html2canvas(dom).then(function(canvas) {
         //将canvas转换为base64图片
         var imgUrl = canvas.toDataURL('image/png');
+        $("#imgres").hide();//先隐藏，再显示
         $("#imgres").attr("src",imgUrl);
         setTimeout(() => {
             var url = removeImgBg(document.getElementById('imgres'));
-            $("#imgres").hide();
+            $("#imgres").hide();//先隐藏，再显示，否则多次点击提交截图会出问题，可以去除查看
             $("#imgres").show();
             console.log(url);
+            //localStorage.removeItem('sigInfo')
         }, 200);
     });
 
